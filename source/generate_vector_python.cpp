@@ -6,7 +6,6 @@
 #include <stdio.h>
 
 
-#include "Indexing/Person.h"
 #include "mcc_vector/mcc.h"
 
 
