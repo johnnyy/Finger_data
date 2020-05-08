@@ -1,6 +1,6 @@
 GCC=g++
 
-INCLUDE_DIR= -I/usr/local/include/opencv4
+INCLUDE_DIR= -I/usr/local/include/opencv4 -L/usr/local/lib/
 LIBS =  -lopencv_highgui -lopencv_core -lopencv_imgproc
 FLAGS = -O3 
 all:

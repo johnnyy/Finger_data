@@ -7,7 +7,7 @@
 
 
 #include "mcc_vector/mcc.h"
-
+#include "Indexing/Person.h"
 
 //arg1 lista de arquivos
 //arg2 pasta de saida dos vetores
@@ -104,7 +104,7 @@ int main(int argc, char * argv[]){
         FILE * fp;
         FILE * saida;
         char quality[2];
-        printf("aaaaaaaaaaaaaa\n");
+//        printf("aaaaaaaaaaaaaa\n");
 
 
 
