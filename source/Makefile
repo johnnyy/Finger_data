@@ -22,7 +22,7 @@ all:
 
 	#$(GCC) Testing_Search_Index_Words.cpp -o Testing_Index_Search mcc_vector/mcc.cpp Indexing/Indexing.cpp $(INCLUDE_DIR) $(LIBS) $(FLAGS)   
 
-	$(GCC) generate_vector_python.cpp -o generate_vector_python mcc_vector/mcc.cpp $(INCLUDE_DIR) $(LIBS) $(FLAGS)   
+	$(GCC) generate_vector_python.cpp -o generate_vector_python mcc_vector/mcc.cpp Indexing/Person.h $(INCLUDE_DIR) $(LIBS) $(FLAGS)   
 
 
 
