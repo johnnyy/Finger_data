@@ -5,13 +5,13 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-#include <opencv/cv.hpp>
+//#include <opencv2/opencv.hpp>
 #include <opencv2/highgui/highgui.hpp>
 using namespace std;
 using namespace cv;
-#include <nlohmann/json.hpp>
-
-using json = nlohmann::json;
+//#include <nlohmann/json.hpp>
+//
+//using json = nlohmann::json;
 
 #ifndef PI
 #define PI 3.1415926535897932384626433832795028841971693993751058209 
@@ -30,7 +30,7 @@ typedef vector<Minu> MinuList;
 
 // load minutiae list from file
 bool LoadMinutiaeList(const char* filename, MinuList& ML, int threshold_quality);
-bool LoadSourceAfisMinutiaeList(const char* filename, MinuList& ML, int threshold_quality);
+//bool LoadSourceAfisMinutiaeList(const char* filename, MinuList& ML, int threshold_quality);
 bool LoadMCCMinutiaeList(const char* filename, MinuList& ML, int& width, int& height);
 
 vector<vector<uint8_t>> getMCCBinVector(MinuList &ML, bool rotation, int R, int NS, int ND);

@@ -1,9 +1,8 @@
 GCC=g++
 
-INCLUDE_DIR= -I/usr/local/include/opencv
+INCLUDE_DIR= -I/usr/local/include/opencv4
 LIBS =  -lopencv_highgui -lopencv_core -lopencv_imgproc
-FLAGS = -O3 -std=c++14
-
+FLAGS = -O3 
 all:
 	#$(GCC) $(INCLUDE_DIR) $(LIB_DIR) $(LIBS) $(FLAGS) mcc.cpp Convert_Vetor.cpp -o convertVetor
 	#$(GCC) teste_class.cpp -o teste_class mcc_vector/mcc.cpp Indexing/Indexing.cpp $(INCLUDE_DIR) $(LIBS) $(FLAGS)   

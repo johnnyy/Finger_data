@@ -147,34 +147,6 @@ bool LoadMinutiaeList(const char* filename, MinuList& ML, int threshold_quality)
 }
 
 
-bool LoadSourceAfisMinutiaeList(const char* filename, MinuList& ML, int threshold_quality)
-{
-	
-
-	std::ifstream file_finger(filename, std::ifstream::in);
-	json jsonfinger;
-	if(file_finger.is_open()){
-
-		file_finger >> jsonfinger; 
-		int pos = 0;
-		while(!jsonfinger["minutiae"][pos].is_null()){
-			Minu M;
-			int q;
-			M.x = jsonfinger["minutiae"][pos]["x"];
-			M.y = jsonfinger["minutiae"][pos]["y"];
-			M.theta = jsonfinger["minutiae"][pos]["direction"];
-			ML.push_back(M);
-			pos++;
-
-		}
-		file_finger.close();
-	}
-
-	else return false;
-
-	
-	return true;
-}
 
 
 
