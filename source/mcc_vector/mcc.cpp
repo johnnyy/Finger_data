@@ -140,7 +140,7 @@ bool LoadMinutiaeList(const char* filename, MinuList& ML, int threshold_quality)
 
 		}
 	}
-	printf("Porcentagem jodada fora: %f%%, total: %d total_jogado: %d \n",100.0*count/total,total,count);
+//	printf("Porcentagem jodada fora: %f%%, total: %d total_jogado: %d \n",100.0*count/total,total,count);
 
 	fclose(f);
 	return true;
